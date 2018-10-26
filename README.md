@@ -3,3 +3,4 @@
 [first-task](https://github.com/controllhu/Workshop-Day2/tree/master/first-task)  
 [controllhu.github.io](controllhu.github.io)  
 [controllhu.github.io repo](https://github.com/controllhu/controllhu.github.io)  
+[Syllabus - Really](https://github.com/green-fox-academy/really-syllabus)
