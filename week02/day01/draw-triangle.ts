@@ -14,5 +14,5 @@ let i: number = null;
 
 for (i = 0; i < lineCount; i++) {
     console.log(piramis);
-    piramis += "*";
+    piramis = piramis + "*";
 }
