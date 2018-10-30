@@ -7,4 +7,4 @@ let changedArr: number[]=numlist.map(function (change) {
         return 4;
     } return change;
 });
-console.log(changedArr);
+console.log(changedArr[3]);
