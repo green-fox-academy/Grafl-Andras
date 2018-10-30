@@ -8,4 +8,4 @@ function printParams(...any){
     }
     
 }
-printParams(56, 77, "HELLO ",34, 54);
+printParams(13, "Hello");
