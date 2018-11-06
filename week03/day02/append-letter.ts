@@ -12,11 +12,4 @@ function appendA(far){
 }
 console.log(appendA(far));
 
-// The output should be: 'boa', 'anaconda', 'koala', 'panda', 'zebra'
-/*let typo: string = "Chinchill";
-function appendAFunc(typo) {
-    console.log(typo+"a");
-}
-appendAFunc(typo);*/
-
-export = appendA;
+export = appendA; 
