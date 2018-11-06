@@ -1,0 +1,25 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang=en>
+<head>
+    <meta charset="utf-8" />
+    <title>Canvas</title>
+</head>
+<body>
+    <!--Y AXIS IS INVERTED IN CANVAS!!!!!!! (top left pixel is 0,0)-->
+    <canvas id='canvas' style="border: 1px solid; width: 800px; height: 600px;">
+        Sorry, your browser does not support the canvas tag. 
+    </canvas>
+
+    <script>
+    
+    //Cache a reference to the html element
+    var canvas = document.getElementById('canvas');
+    canvas.width = canvas.scrollWidth; //scrollWidth: gives the actual size set by css of the html element
+    canvas.height = canvas.scrollHeight;
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillRect(10, 10, 100, 100); //ctx.fillRect(x, y, width, height);
+    </script>
+    
+</body>
+</html>
