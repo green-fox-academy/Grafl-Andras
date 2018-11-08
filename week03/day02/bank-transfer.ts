@@ -40,7 +40,8 @@ console.log(getNameAndBalance(43546731));
 
                       //eredeti tömb
 function transferMoney(accounts, originAccount: number, destinationAccount: number, amount: number) {
-  
+    
+
     for (let i: number = 0; i < accounts.length; i++) {
   
         if (originAccount === accounts[i].accountNumber) {
