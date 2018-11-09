@@ -3,19 +3,12 @@
 const canvas = document.querySelector('.main-canvas') as HTMLCanvasElement;
 const ctx = canvas.getContext('2d');
 
-/*háromszög alsó oldala
-ctx.strokeStyle = 'red';
-ctx.beginPath();
-ctx.moveTo(121.5, 389);
-ctx.lineTo(478.5, 389);
-ctx.stroke();*/
-let x: number = 121.5;
-let y: number = 389;
-let h: number = 478.5;
-let q: number = 389;
+let x: number = 0;
+let y: number = 334;
+let h: number = 357;
+let q: number = 334;
 
 function drawLines1 (x, y, h, q) {
-    ctx.strokeStyle = 'red';
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(h, q);
@@ -24,20 +17,30 @@ function drawLines1 (x, y, h, q) {
 
 for (let i: number = 0; i < 21; i++) {
     drawLines1(x,y,h,q);
-    x += 7.5;
-    y -= 15.87;
-    h -= 7.5;
-    q -= 15.87;
+    x += 8.5;
+    y -= 15.866666666666666666666666666667;
+    h -= 8.5;
+    q -= 15.866666666666666666666666666667;
 }
 
-x = 121.5;
-y = 389;
-h = 454.7;
-q = 55.8;
+x = 0;
+y = 334;
+h = 178.5;
+q = 0.8;
 for (let j: number = 0; j < 21; j++) {
-    ctx.strokeStyle = 'red';
-    ctx.beginPath();
-    ctx.moveTo(x, y);
-    ctx.lineTo(h, q);
-    ctx.stroke();
+    drawLines1(x,y,h,q);
+    x += 17;
+    h += 8.5;
+    q += 15.87;
+}
+
+x = 178.5;
+y = 0.8;
+h = 357;
+q = 334;
+for (let k: number = 21; k > 0; k--) {
+    drawLines1(x,y,h,q);
+    x -= 8.5;
+    y += 15.866666666666666666666666666667;
+    h -= 17;
 }
