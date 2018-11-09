@@ -37,11 +37,13 @@ console.log(getNameAndBalance(43546731));
 //	{ clientName: 'Vladimir', accountNumber: 43546731, balance: 5204099571.23 },
 //	{ clientName: 'Sergei', accountNumber: 23456311, balance: 1354100.0 }
 //
+checkAccountNumber: (x: number): any => (
+    accounts.find(data => data.)
+)
 
                       //eredeti tömb
 function transferMoney(accounts, originAccount: number, destinationAccount: number, amount: number) {
     
-
     for (let i: number = 0; i < accounts.length; i++) {
   
         if (originAccount === accounts[i].accountNumber) {
