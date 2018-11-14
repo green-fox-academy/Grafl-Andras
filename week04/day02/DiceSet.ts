@@ -34,38 +34,19 @@ class DiceSet {
                 console.log(this.dices[index]);
             }        
         }
-        checkIfItsSix(){
-            for (let i: number = 0; i < diceSet.dices.length; i++){
-                if (this.dices[i] !== 6){
-                    while (this.dices[i] !== 6){
-                    diceSet.reroll(i);
-                    } 
-                }
-                //return diceSet.dices[i] === 6;
-            }
-        }
-        // if (this.dices !==6)
-            //diceSet.reroll(i);
-
-        untilSixFunction (){
-            while (this.dices.every(this.dices.checkIfItsSix())) {
-
-                diceSet.reroll();
-            }
+        isItSix (index?: number) {
         }
     }
-    
     let diceSet = new DiceSet();
     diceSet.roll();
     diceSet.getCurrent();
     console.log("------------------");
-    diceSet.reroll();
-    diceSet.getCurrent();
-    console.log("------------------");
-    diceSet.getCurrent(5);
-    diceSet.reroll();
-    diceSet.getCurrent();
-    console.log("------------------");
-    diceSet.reroll(4);
-    diceSet.getCurrent();
 
+    for (let i = 0; i < diceSet.dices.length; i++) {
+        while (diceSet.dices[i] < 6) {
+            diceSet.reroll(i);
+        }
+    }
+    
+
+diceSet.getCurrent();
