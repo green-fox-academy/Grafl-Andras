@@ -7,11 +7,11 @@
 
 function bunnies (n: number): number {
     if (n === 1) {
-        return 3;
+        return 2;
     } else if ( (n % 2) === 0 ) {
-        return 2 + bunnies(n-1);
-    } else {
         return 3 + bunnies(n-1);
+    } else {
+        return 2 + bunnies(n-1);
     }
 }
-console.log(bunnies(4));
+console.log(bunnies(5));
