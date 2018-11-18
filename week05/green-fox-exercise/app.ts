@@ -36,7 +36,7 @@ export class Student {
     }
 
     getGoal() {
-        console.log('Be a junior software developer.');
+        console.log('My goal: Be a junior software developer.');
     }
 
     introduce() {
@@ -66,7 +66,7 @@ export class Mentor {
     }
 
     getGoal(){
-        console.log('Educate brilliant junior software developers.');
+        console.log('My goal: Educate brilliant junior software developers.');
     }
 }
 
@@ -90,7 +90,7 @@ export class Sponsor {
     }
 
     getGoal(){
-        console.log('Hire brilliant junior software developers.');
+        console.log('My goal: Hire brilliant junior software developers.');
     }
 
     hire() {
