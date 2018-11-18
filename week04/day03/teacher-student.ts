@@ -7,31 +7,29 @@ Teacher
 teach(student) -> calls the students learn method
 answer()*/
 
-class StudentClass {
-    
+class Student {
     learn (){
         console.log('Peti: Ertem, tanarneni!');
     }
-
-    question (teacher: TeacherClass): any {
-        console.log('Peti: Azt szeretnem kerdezni hogy')
+    question (teacher: Teacher): any {
+        console.log('Peti: Azt szeretnem kerdezni hogy...')
         teacher.answer();
     }
 }
 
-class TeacherClass {
-
+class Teacher {
     answer () {
         console.log('Erika neni: Ne okoskodj Petike');
     }
-
-    teach(student: StudentClass): any {
-        console.log('Erika neni: most megmondom a tutit');
+    teach(student: Student): any {
+        console.log('Erika neni: Most megmondom a tutit');
         student.learn();
     }
 }
 
-let Peti = new StudentClass;
-let Erikaneni = new TeacherClass;
+let Peti = new Student;
+let Erikaneni = new Teacher;
 
 Peti.question(Erikaneni);
+console.log('----------------------------')
+Erikaneni.teach(Peti);
