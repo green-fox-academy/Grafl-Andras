@@ -1,3 +1,7 @@
+'use strict';
+
+// Create a method that decrypts reversed-lines.txt
+
 const fs = require('fs');
 
 function readFromFile(fileName: string): string {
