@@ -1,0 +1,24 @@
+.container {
+    display: flex;
+    background: black;
+    width: 90%;
+    height: 50px;
+    margin:0px auto;
+    
+}
+
+.header {
+}
+
+.navlist {
+    display: flex;
+}
+
+.item {
+    list-style-type: none;
+    background-color: purple;
+    width: 60px;
+    height: 30px;
+    
+    
+}
