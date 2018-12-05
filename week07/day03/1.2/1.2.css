@@ -12,17 +12,17 @@
 .green{
     background-color: green;
     flex-grow: 1;
-    //width: 25%;
+    /*width: 25%;*/
 }
 
 .yellow {
     background-color: yellow;
     flex-grow: 2;
-    //width: 50%;
+    /*width: 50%;*/
 }
 
 .purple {
     background-color: purple;
     flex-grow: 1;
-    //width: 25%;
+    /*width: 25%;*/
 }
