@@ -46,12 +46,12 @@
       //Only add the asteroids to the list.
       //Each list item should have its category as a class and its content as text content.
       for (let i = 0; i < planetData.length; i++){
-          let addnewTag = document.createElement('li');
+          let addnewTag = document.createElement('li'); 
 
           if(planetData[i].asteroid === true) {
-            addnewTag.setAttribute('class', `${planetData[i].category}`);
-            addnewTag.innerText = planetData[i].content;
-            list.appendChild(addnewTag);
+            addnewTag.setAttribute('class', `${planetData[i].category}`); //classnak megadjuk a category-t
+            addnewTag.innerText = planetData[i].content; //innertextnek megadjuk a content-et
+            list.appendChild(addnewTag); //hozzáadjuk a listához
           }
       }
     </script>
