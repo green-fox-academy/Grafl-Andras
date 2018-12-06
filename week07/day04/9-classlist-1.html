@@ -60,12 +60,8 @@
         });
 
       //Make balloon less balloon-like (change its shape)
-      pArray.forEach( e => {
-            if (e.classList.contains('balloon')) {
-                e.classList.remove('balloon');
-                e.classList.add('pear');
-            }
-        });
+        let balloon = document.querySelector('.balloon');
+        balloon.style.borderRadius = '10%';
     </script>
 </body>
 </html>
