@@ -26,5 +26,26 @@ app.get('/doubling', (req, res) => {
 });
 
 
+app.get('/greeter', (req, res) => {
+  if (req.query.name && req.query.title) { //ha van name és title
+      res.send({
+      "welcome_message": `Oh, hi there ${req.query.name}, my dear ${req.query.title}!`
+      });
+    } else if (!req.query.name) { //ha nincs name
+      res.send({
+      "error": "Please provide a name!"
+      });
+    } else if (!req.query.title) { //ha nincs title
+      res.send({
+      "error": "Please provide a title!"  
+      });
+    } else if (!req.query.name & !req.query.title) { //ha nincs se title, se name
+      res.send({
+        "error": "Please provide a title and a name!"
+      });
+    }
+  });
+
+
 app.listen(8080);
 console.log(`Now listening on port 8080`);
