@@ -5,8 +5,7 @@ const app = express();
 const path = require('path');
 
 app.use('/assets', express.static('assets'));
-const bp = require('body-parser');
-app.use(bp());
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.html'));
